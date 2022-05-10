@@ -1,0 +1,12 @@
+.header{
+    width: 100%;
+    font-size: calc(20vh / var(--unit));
+    font-weight: 900;
+    color: gold;
+    text-align: center;
+    text-shadow: -1px -1px 3px #fff, 1px 1px 5px #000;
+}
+.gameheader{
+    font-size: calc(10vh / var(--unit));
+    font-weight: 600;
+}

@@ -1,0 +1,28 @@
+.menu_view{
+    width: calc(20vh / var(--unit));
+    height: calc(80vh / var(--unit));
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    list-style: none;
+}
+.btn{
+    width: calc(10vh / var(--unit));
+    height: calc(10vh / var(--unit));
+    background-color: #d5dace;
+    margin: calc(2vh / var(--unit));
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size:calc(6vh / var(--unit));
+    background-position-x: center;    
+    background-position-y: center;
+}
+.btn:hover{
+    background-color: #d1f0a6;
+}
+.restart{
+    background-image: url("../../../../public/image/recycle.svg");
+}
+.back{
+    background-image: url("../../../../public/image/back.svg");
+}

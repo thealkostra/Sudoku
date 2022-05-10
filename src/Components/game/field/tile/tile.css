@@ -1,0 +1,25 @@
+.tile_view{
+    width: calc(8.8vh / var(--unit));
+    height: calc(8.8vh / var(--unit));
+    background-color: #e6f2fc;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(6vh / var(--unit));
+    font-weight: 700;
+    color: #3a8100;
+}
+.tile_areatwo{
+    background-color: #cbdadb;
+}
+.tile_active{
+    background-color: #ffd89a;
+}
+.tile_etalon{
+    color: #3c5253;;
+}
+.tile_error{
+    color: crimson;
+}

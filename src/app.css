@@ -1,0 +1,9 @@
+.App{
+    width: calc(100vh / var(--unit));
+    height: calc(100vh / var(--unit));
+    border: 2px solid #000;
+    box-shadow: -1px -1px 2px rgb(172, 170, 170);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
