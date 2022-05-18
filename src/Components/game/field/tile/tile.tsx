@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import * as React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeActiveTile, selectActiveTile, selectEtalonField } from "../../../../store/allSlice";
 import { styleTile } from "./styleTile";
@@ -12,7 +12,8 @@ interface IProps{
     valid: boolean,
 }
 
-export const Tile = ({title, col, row, valid}:IProps) =>{
+const Tile = ({title, col, row, valid}:IProps) =>{
+    console.log("tole")
     const dispatch = useDispatch();
     const activeTile = useSelector(selectActiveTile);
     const etalon = useSelector(selectEtalonField);
@@ -34,3 +35,9 @@ export const Tile = ({title, col, row, valid}:IProps) =>{
         >{title}</div>
     )
 }
+
+const check = (prevState:IProps, nextState:IProps) =>{
+    return prevState.title===nextState.title
+}
+
+export const MemoizedTile = React.memo(Tile, check);

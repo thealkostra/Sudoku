@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { deleteTile, newField, selectActiveTile, selectErrorField, selectField, selectGameMode, toDownActiveTile, toLeftActiveTile, toRightActiveTile, toUpActiveTile, updateField } from "../../../store/allSlice"
 import "./field.css"
-import { Tile } from "./tile/tile";
+import { MemoizedTile } from "./tile/tile";
 import { prepareBoard } from "./prepareboard";
 
 export const Field = () =>{
@@ -16,7 +16,7 @@ export const Field = () =>{
         return(
             <div className="col field__col col_view">
                 {row.map((tile, key)=>(
-                    <Tile 
+                    <MemoizedTile 
                         key={key} 
                         row={keyrow} 
                         col = {key} 
