@@ -13,7 +13,7 @@ interface IProps{
 }
 
 const Tile = ({title, col, row, valid}:IProps) =>{
-    console.log("tole")
+
     const dispatch = useDispatch();
     const activeTile = useSelector(selectActiveTile);
     const etalon = useSelector(selectEtalonField);
